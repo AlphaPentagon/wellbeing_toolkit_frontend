@@ -53,7 +53,7 @@ export default function ControlledCarousel() {
                 <h3 className="resourceTitle">{resource.title}</h3>
                 <p>{resource.description}</p>
               </div>
-              <div className="resourceLink"><a href={resource.link} rel="noreferrer" target="_blank">
+              <div className="resourceLink"><a className="resourceLinks" href={resource.link} rel="noreferrer" target="_blank">
                   Further Reading
                 </a></div>
               </Carousel.Caption>
