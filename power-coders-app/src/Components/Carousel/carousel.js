@@ -17,7 +17,7 @@ export default function ControlledCarousel() {
       const weeksArr = [];
       for (let i = currentWeek; i < currentWeek + NUM_WEEKS_IN_CAROUSEL; i++) {
         const response = await fetch(
-          `http://localhost:3001/resources/week/${i}`
+          `https://soc-wellbeing-toolkit.herokuapp.com/resources/week/${i}`
         );
         const data = await response.json();
         weeksArr.push(data.payload[0]);
@@ -30,11 +30,20 @@ export default function ControlledCarousel() {
 
   //some classNames are using bootstrap utilities.
   return (
-    <Carousel className="carousel-container" activeIndex={index} onSelect={handleSelect}>
+    <Carousel
+      className="carousel-container"
+      activeIndex={index}
+      onSelect={handleSelect}
+    >
       {resources.map((resource, index) => {
         const imageURL = `${imgURL}${resource.image_path}`;
         return (
-          <Carousel.Item className="consistant" id={"carousel-item-" + index} key={index} interval={10000}>
+          <Carousel.Item
+            className="consistant"
+            id={"carousel-item-" + index}
+            key={index}
+            interval={10000}
+          >
             <div class="row">
               <div class="column">
                 <div className="resourceImage">
