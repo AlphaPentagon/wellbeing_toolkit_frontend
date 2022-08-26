@@ -7,6 +7,8 @@ The SoC Wellbeing Toolkit helps bootcampers manage their wellbeing using tools a
 
 This is the front-end documentation for the app.
 
+You can view the App live [here](https://soc-wellbeing-toolkit.netlify.app/)
+
 The front-end provides a wellbeing toolkit for a Schoolof Code bootcamper to assist with remote learning.
 
 Looking for the [Back-end?](https://github.com/SchoolOfCode/w9_backend-project-power-coders-fe)
