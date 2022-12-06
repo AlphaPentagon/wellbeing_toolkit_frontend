@@ -17,7 +17,7 @@ export default function ControlledCarousel() {
       const weeksArr = [];
       for (let i = currentWeek; i < currentWeek + NUM_WEEKS_IN_CAROUSEL; i++) {
         const response = await fetch(
-          `https://soc-wellbeing-toolkit.onrender.com//resources/week/${i}`
+          `https://soc-wellbeing-toolkit.onrender.com/resources/week/${i}`
         );
         const data = await response.json();
         weeksArr.push(data.payload[0]);
